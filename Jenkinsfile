@@ -72,7 +72,7 @@ environment{
                      echo '<--------------- Jar Publish Ended --------------->'  
             
                 }
+            }   
         }   
-    }   
     }
 }
