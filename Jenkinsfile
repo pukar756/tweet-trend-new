@@ -96,9 +96,18 @@ environment{
                     app.push()
                 }    
                echo '<--------------- Docker Publish Ended --------------->'  
+                }
             }
         }
-    }  
+
+        stage("deploy"){
+            steps {
+                script {
+                    sh './deploy.sh'
+                }
+            }
+        }
+
      
     }
 }
